@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+/*
+5 cores da paleta: 
+#C5EBD6 (cor de fundo da página) - verde mais claro
+#83E1AD
+#3DDC84
+#2FA866
+#063D1E - verde mais escuro
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+
+:root {
+    --cor0: #C5EBD6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #063D1E;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Dancing Script', cursive;
+    --font-android: 'Android', cursive; 
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+} /* Colocando o asterisco (*), ele seleciona TODOS os elementos de HTML (p, h1, h2, h3, etc).*/
+
+body {
+    background-color: #C5EBD6;
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    min-height: 150px; /* insere uma altura mínima da caixa do header.*/
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 3em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px; /* insere uma margem para dar distância da frase abaixo.*/
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.534);
+}
+
+header > p {
+    color: aliceblue;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.534);
+    max-width: 500px;
+    padding-right: 10px; /*coloca-se os paddings right e left para quando a tela reduzir de tamanho, o texto nao ficar colado com a margem.*/
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+nav {
+    background-color: #053219;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgb(0, 0, 0, 0.363);
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: 0.5s; /* esse parâmetro faz com, ao mexer no mouse em cima dos links, ele demore 0,5s para alterar a cor (ver pseudoclasse abaixo).*/
+}
+
+nav > a:hover{ /* pseudoclasse: quando clica no link a, a cor da caixa muda*/
+    background-color: #2FA866;
+    color: #053219;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 800px;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.468); /* colocando sombra na janela do conteúdo principal (main)*/
+} /* os valores min e max width limitam a largura da tela, adaptando o conteúdo aos diferentes tamanhos de tela - RESPONSIVIDADE.*/
+
+main h2 {
+    color: #063D1E;
+    font-family: var(--font-android);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h3 {
+    font-family: var(--font-android);
+    color: #053219;
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.5em; /*espaço entre linhas*/
+}
+
+main strong{
+    color: #053219;
+    font-weight: bold;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #053219;
+    background-color: #C5EBD6;
+    padding: 2px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: #053219;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px; /*limitando o tamanho máximo das imagens pequenas a 350px (em geral, elas têm 400px nesse exemplo), mesmo que a tela aumente de tamanho, a imagem só vai aumentar até 350px para não perder as formas (ficar embaçado). Se colocasse apenas width= 50%, aumentando a tela, a imagem ia ficar borrada. Mas em alguns casos, essa pode ser uma solução.*/
+    display: block;
+    margin: auto; /* centraliza a imagem; se não der certo, tem que adicionar também a propriedade "display= block".*/
+}
+
+div.video {
+    background-color: #053219;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative; /* determina que o elemento será posicionado de acordo com o fluxo natural da página.Ao utilizá-lo em conjunto com as propriedades auxiliares, o posicionamento será ajustado de acordo com as indicações.*/
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {/* aside são conteúdos periféricos*/
+    background-color: #83E1AD;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside > h3 {
+    background-color: #053219;
+    font: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px; /* o valor negativo (-) faz com que a margem aumente para o lado de fora.*/
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0'; /*esse recurso não é compatível com todos os navegadores*; lembrar de colocar barra invertida (\) e o código emoji. O 00A0 é o espaço que se dá entre o emoji de check list (nesse exemplo) e o conteúdo da lista; nesse exemplo foram dados 2 espaços (00A0\00A0).*/
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer {
+    background-color: #063D1E;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    }
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}

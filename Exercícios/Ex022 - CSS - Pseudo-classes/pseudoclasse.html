@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: rgba(135, 226, 196, 0.863);
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        div:hover {
+            background-color: blue;
+        } /* pseudo-classe "hover" = passando o mouse por cima; não significa que ele vire um link, mas sim que apenas altera seu estado quando o mouse é passado por cima do elemento. */
+
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <p>A pseudoclasse hover, altera o estado do elemento, quando se passa o mouse sobre ele. No caso acima, atribuindo a pseudoclasse hover aos elementos div, toda vez que passamos o mouse sobre as divs, elas alteram a cor de fundo (background color) para azul, como foi determinado no div:hover.</p>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombra nas caixas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            padding: auto;
+        }
+
+        header {
+            background-color: white;
+            padding: 5px;
+        }
+
+        h1 {
+            text-shadow: 1px 1px 1px rgba(142, 209, 16, 0.527)
+        }
+
+        header > nav {
+            background-color: grey;
+            padding: 3px;
+            box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.568);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        main {
+            background-color: rgb(173, 173, 173);
+            margin: 5px;
+            padding: 5px;
+            border-radius: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 3px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <article id="caixa">
+        <h1>Usando sombras</h1>
+        <p>Vamos aprender a usar sombras com esse exemplo simples.</p>
+        <p>Utilizamos sombras no h1 e na caixa de links.</p>
+    </article>
+
+    <header>
+        <h1>Meu site</h1>
+
+        <nav>
+            <a href="e">Link</a>
+            <a href="e">Link</a>
+            <a href="e">Link</a>
+            <a href="e">Link</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <h2>Notícias sobre o Brasil</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet provident officia cupiditate rem harum in mollitia, eligendi consequuntur iure. Quae tempora fugit sequi enim reprehenderit illo a maxime similique facilis.</p>
+
+        <aside>Publicado por fulano.</aside>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Cibele Yamada</p>
+    </footer>
+
+    <div id="bola"></div>
+</body>
+</html>

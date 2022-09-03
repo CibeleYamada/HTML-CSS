@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <h1>Como inserir arquivos de áudio com HTML</h1>
+    <hr>
+    <p>Vamos aprender a reproduzir áudios nos sites usando o HTML5. A tag utilizada nesse caso é a &lt; audio &gt;, associada à tag &lt; source &gt;.</p>
+    <br>
+    <h2>Primeira forma:</h2>
+    <br>
+    <p>Inserindo a tag audio com parâmetros de controls e autoplay:</p>
+    <audio src="audio/photographs.mp3" controls autoplay></audio>
+    <hr>
+    <h2>Segunda forma:</h2>
+    <br>
+    <p>Utilizando as tags audio e source separadamente.</p>
+    <audio>
+        <source src="" type="">
+    </audio>
+    <hr>
+    <p>Utilizando o parâmetro preloud com valor 'auto'. Só colocando auto ele não carrega. Precisou colocar 'controls autoplay'.</p>
+    <audio preload="auto" controls autoplay>
+        <source src="audio/photographs.mp3" type="audio/mpeg">
+    </audio>
+    <hr>
+    <p>Utilizando o parâmetro preloud metadata:</p>
+    <audio preload="metadata" controls autoplay>
+        <source src="audio/photographs.mp3" type="audio/mpeg">
+    </audio>
+    <hr>
+    <p>Utilizando o parâmetro preloud none:</p>
+    <audio preload="none" controls autoplay>
+        <source src="audio/photographs.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

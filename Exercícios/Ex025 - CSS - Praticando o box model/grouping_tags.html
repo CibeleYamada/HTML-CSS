@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        nav {
+            background-color: grey;
+            padding: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 50px;
+        }
+
+        main {
+            background-color: whitesmoke;
+            margin: 0px;
+        }
+
+        article {
+            background-color: lightgray;
+        }
+
+        article > aside {
+            background-color: rgb(182, 181, 181);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="e">Link</a>
+            <a href="e">Link</a>
+            <a href="e">Link</a>
+            <a href="e">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Título do artigo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae amet provident eum repellendus dolorum laboriosam soluta voluptatibus eius corrupti repellat laborum atque itaque beatae nihil similique, voluptate numquam quod quidem?</p>
+                <aside>
+                    <p>Artigo escrito por Fulano.</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Cibele Yamada</p>
+    </footer>
+</body>
+</html>
