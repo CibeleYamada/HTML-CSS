@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-position</title>
+
+    <style>
+        div.bloco {/*Usando uma imagem grande. Note que as posições (backgroud-position) referem-se à imagem, observando os id q1 a q4. Ex: no q1, o nvegador mostra a imagem a partir do canto esquerdo (left) e acima (top), enquanto em q4, mostra o centro da imagem.*/
+            background-image: url(imagens/wallpaper002.jpg);
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        div#q1 {
+            background-position: left top;
+
+        }
+
+        div#q2 {
+            background-position: left center;
+        }
+
+        div#q3 {
+            background-position: right bottom;
+        }
+
+        div#q4 {
+            background-position: center center;
+        }
+
+        div.caixa {/*Usando uma imagem pequena. Note que as posições (backgroud-position) referem-se ao elemento div, observando os id w1 a w4. Ex: no w1, o navegador mostra a imagem no canto esquerdo (left) e acima (top) do espaço da div, enquanto em q4, mostra a imagem no centro do espaço da div.*/
+            background-image: url(imagens/pattern001.png);
+            background-repeat: no-repeat;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        div#w1 {
+            background-position: left top;
+
+        }
+
+        div#w2 {
+            background-position: left center;
+        }
+
+        div#w3 {
+            background-position: right bottom;
+        }
+
+        div#w4 {
+            background-position: center center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bloco" id="q1"></div>
+
+    <div class="bloco" id="q2"></div>
+
+    <div class="bloco" id="q3"></div>
+
+    <div class="bloco" id="q4"></div>
+
+    <div class="caixa" id="w1"></div>
+
+    <div class="caixa" id="w2"></div>
+
+    <div class="caixa" id="w3"></div>
+
+    <div class="caixa" id="w4"></div>
+</body>
+</html>
