@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical de blocos</title>
+
+    <style>
+        body {
+            background-color: darkgray;
+        }
+
+        #bloco {
+            position: relative;
+            height: 400px;
+            width: 350px;
+            background-color: white;
+            margin: auto;
+            
+        }
+
+        #conteudo {
+            position: absolute;
+            height: 50px;
+            width: 280px;
+            background-color: rgba(128, 128, 128, 0.827);
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            text-align: center;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="bloco">
+        <div id="conteudo">
+            <h1>LOGIN</h1>
+        </div>
+    </div>
+</body>
+</html>
