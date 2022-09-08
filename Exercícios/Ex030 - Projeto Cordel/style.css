@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Dancing;
+    src: url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+}
+
+* { /*Cria configurações gerais para todos os elementos*/
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html, body { /*Configurações que o html e o body vão ter em comum*/
+    min-height: 100vh; /*Siginifica que o tamanho mínimo da altura (min-height) é 100% da altura do viewport (Viewport Height = vh). */
+    background-color: darkgrey;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps; /* deixa a primeira letra das palavras em maiúsculo*/    
+}
+
+header > p {
+    padding-bottom: 50px;
+    }
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: black;
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.37); /*todo parágrafo que está na section imagem terá fundo preto para que a imagem que será inserida na parte de trás deixe as letras não visíveis.*/
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
