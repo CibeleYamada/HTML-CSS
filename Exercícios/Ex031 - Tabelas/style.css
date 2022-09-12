@@ -14,6 +14,16 @@ table {
     width: 500px;
 }
 
+table > caption {
+    background-color: rgb(66, 119, 255);
+    text-align: left;
+    padding: 5px;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
 table > thead {
     background-color: rgba(20, 20, 221, 0.328);
 }
