@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select, datalist e textarea</h1>
+
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Select</legend>
+            <p>
+                <label for="iest"></label>
+                <select name="Estado" id="iest">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+                        </p>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+
+    <h1>Datalist</h1>
+
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="iest">Estado:</label>
+            <input type="text" name="estado" id="iest" list="listest">
+            <datalist id="listest">
+                <option >Acre</option>
+                <option >Alagoas</option>
+                <option >Amapá</option>
+                <option >Amazonas</option>
+                <option >Bahia</option>
+                <option >Ceará</option>
+                <option >Distrito Federal</option>
+                <option >Espírito Santo</option>
+                <option >Goiás</option>
+                <option >Maranhão</option>
+                <option >Mato Grosso</option>
+                <option >Mato Grosso do Sul</option>
+                <option >Minas Gerais</option>
+            </datalist>
+        </p>
+    </form>
+
+    <h1>Textarea</h1>
+
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="5"></textarea>
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
