@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /*dispositivo em modo paisagem*/
+
+body {
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom; /*porque em telas muito grandes, a imagem ficava com uma parte azul aparecendo (que é o fundo), ou seja, a imagem não cobria a tela como um todo.*/
+}

@@ -2,3 +2,7 @@
 
 /*dispositivo em modo retrato*/
 
+body {
+    background: url(../imagens/cev-portrait.jpg) ; /*../ indica para voltar 1 pasta.*/
+    background-position: center bottom;
+}
