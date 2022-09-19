@@ -1,3 +1,64 @@
 @charset "UTF-8";
 
 /*Versão para todas as mídias*/
+
+/*Typical Device Breakpoints (W3C - ano em que Guanabara gravou o vídeo):
+- Pequenas telas: até 600px;
+- Celular: 601px até 768px;
+- Tablet: 769 a 992px;
+- Desktop: 993 a 1200px;
+- TV e grandes telas: acima de 1200px;
+*/
+
+@media print { /*configurações para versão para imprimir*/
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+
+}
+
+/*como já tem as configurações de tela para os dispositivos móveis em 'style.css' (versão mobile first), não precisamos fazer as confirgurações aqui (que seriam as configurações para @media screen de telas pequenas e celulaes. Começamos então com a versão para tablet em diante:*/
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /*tablet*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg); /*alterando a imagem de fundo quando a tela aumentar acima de 768px e abaixo de 992*/
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#desktop {display: none;}
+    img#tv {display: none;}
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){/*desktop*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#desktop {display: block;}
+    img#tv {display: none;}
+
+}
+
+@media screen and (min-width: 1200px){ /*grandes telas*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#desktop {display: none;}
+    img#tv {display: block;}
+
+}
