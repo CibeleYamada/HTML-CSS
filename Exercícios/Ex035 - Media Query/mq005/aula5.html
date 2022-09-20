@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="estilos/mediaquery.css" media="screen">
 
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
@@ -38,7 +38,18 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut temporibus minus nemo. Itaque optio sed perspiciatis, ratione, minima dolor, delectus voluptas praesentium fuga a commodi eveniet maxime architecto provident eos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque modi quod incidunt quis quae commodi, expedita obcaecati nemo numquam totam delectus exercitationem et perferendis tenetur, eum unde? Voluptatum, placeat numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsam iste rerum, laborum eveniet asperiores veritatis vero reiciendis doloribus possimus et est dolor ex nobis dolorum! Delectus error dignissimos ipsa!</p>
         </article>
     </main>
-    <script>
+
+    <!--inserindo o JavaScript dos scripts mudouTamanho e clickMenu; o primeiro indica que se a tela for maior que 768px, os itens do menu vão obrigatoriamente ser exibidos; e o segundo diz que se os itens do menu estiverem aparecendo, ao clicar em menu, eles desaparecerão.-->
+    <script> 
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        } 
+
         function clickMenu() {
             if (itens.style.display == 'block'){
                 itens.style.display = 'none'
@@ -46,6 +57,7 @@
                 itens.style.display = 'block'
             }
         }
-    </script>
+    </script> 
+
 </body>
 </html>

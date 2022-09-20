@@ -1,4 +1,28 @@
 @charset "UTF-8";
 
 /*Versão diferentes telas*/
+/*Typical Device Breakpoints (W3C - ano em que Guanabara gravou o vídeo):
+- Pequenas telas: até 600px;
+- Celular: 600px até 768px;
+- Tablet: 768 a 992px;
+- Desktop: 992 a 1200px;
+- TV e grandes telas: acima de 1200px;
+*/
 
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none; /*faz o menu hamburguinho desaparecer. Pq ele é próprio para celulares*/
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
